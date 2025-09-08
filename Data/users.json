@@ -1,23 +1,38 @@
-[
+{ 
+     "users" : [
     {
         "id": 1,
         "name": "Alice Johnson",
         "email": "alice.johnson@example.com",
-        "role": "member",
-        "isActive": true
+        "issuedBook": "3",
+        "issuedDate": "6-7-2012",
+        "returnDate": "6-8-2012",
+        "subscriptionType": "Premium",
+        "subscriptionDate": "1-1-2020" 
+        
     },
     {
         "id": 2,
         "name": "Bob Smith",
+        "surname": "Smith",
         "email": "bob.smith@example.com",
-        "role": "librarian",
-        "isActive": true
+        "issuedBook": "2",
+        "issuedDate": "8-7-2023",
+        "returnDate": "10-7-2023",
+        "subscriptionType": "gold",
+        "subscriptionDate": "1-1-2020"    
     },
     {
         "id": 3,
         "name": "Charlie Brown",
         "email": "charlie.brown@example.com",
-        "role": "member",
-        "isActive": false
+        "issuedBook": "1",
+        "issuedDate": "25-6-2023",
+        "returnDate": "30-6-2023",
+        "subscriptionType": "silver",
+        "subscriptionDate": "30-1-2020"
+        
     }
-]
+
+    ]
+}
