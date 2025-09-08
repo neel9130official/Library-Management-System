@@ -1,38 +1,39 @@
-[
-    {
+{
+    "books" : [
+        {
         "id": 1,
         "title": "To Kill a Mockingbird",
         "author": "Harper Lee",
-        "isbn": "9780061120084",
-        "publishedYear": 1960,
-        "genre": "Fiction",
-        "available": true
+        "price": "804",
+        "publisher": "Navneet Publications",
+        "genre": "Fiction"
+        
     },
     {
         "id": 2,
         "title": "1984",
         "author": "George Orwell",
-        "isbn": "9780451524935",
-        "publishedYear": 1949,
-        "genre": "Dystopian",
-        "available": false
+        "price": "975",
+        "publisher": "Nikita Publications",
+        "genre": "Dystopian"
+        
     },
     {
         "id": 3,
         "title": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
-        "isbn": "9780743273565",
-        "publishedYear": 1925,
-        "genre": "Classic",
-        "available": true
+        "price": "565",
+        "publisher": "Navneet Publications",
+        "genre": "Classic"
+        
     },
     {
         "id": 4,
         "title": "Pride and Prejudice",
         "author": "Jane Austen",
-        "isbn": "9780141439518",
-        "publishedYear": 1813,
-        "genre": "Romance",
-        "available": true
-    }
-]
+        "price": "141",
+        "publisher": "Nikita Publications",
+        "genre": "Romance"
+        }
+    ]
+}

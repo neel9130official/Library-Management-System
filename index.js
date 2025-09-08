@@ -1,15 +1,19 @@
-const express= require('express')
+const express = require('express');
+// const {users} = require('./Data/users.json');
 
-const app =express();
 
-app.use(express.json())
-const port =3000;
+const usersRouter = require('./Routes/users');
+const booksRouter = require('./Routes/books');
 
-app.get('/',(req,res)=>{
-    res.status(200).json({
-        message:"Home Page"
-    })
-})
-app.listen(port,()=>{
-    console.log(`Srver URL http://localhost:${port}`)
-})
+
+const app = express();
+app.use(express.json());
+const port = 3000;
+
+ app.use('/users', usersRouter);
+ app.use('/books', booksRouter);
+
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
