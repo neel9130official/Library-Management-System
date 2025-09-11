@@ -1,10 +1,15 @@
 const express = require('express');
-// const {users} = require('./Data/users.json');
+
+ 
+const dotenv = require('dotenv');
 
 
 const usersRouter = require('./Routes/users');
 const booksRouter = require('./Routes/books');
 
+dotenv.config();
+const dbConnection = require('./databaseConnection');
+dbConnection();
 
 const app = express();
 app.use(express.json());
